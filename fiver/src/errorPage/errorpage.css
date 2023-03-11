@@ -1,0 +1,12 @@
+.error-component {
+  background-color: #f8d7da; /* light red */
+  border: 1px solid #f5c6cb; /* medium red */
+  color: #721c24; /* dark red */
+  padding: 10px;
+  text-align: center;
+}
+
+.error-message {
+  font-size: 1.2em;
+  font-weight: bold;
+}

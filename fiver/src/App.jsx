@@ -14,7 +14,7 @@ import {
   Register,
 } from './pages';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import ErrorBoundary from './ErrorBoundary';
+import { ErrorBoundary, ErrorPage } from './errorPage';
 import './app.scss';
 
 //router for routing the endpoint url
@@ -59,6 +59,10 @@ const router = createBrowserRouter([
   {
     path: '/register',
     element: <Register />,
+  },
+  {
+    path: '/*',
+    element: <ErrorPage />,
   },
 ]);
 function App() {
