@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './navbar.scss';
-//import { Link } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [active, setActive] = useState(false);
@@ -25,32 +25,40 @@ const Navbar = () => {
     $name: 'Papa',
     $seller: true,
   };
+
+  //useLocation hook
+  const location = useLocation();
+  console.log(location);
   return (
-    <div className={active ? 'navbar active' : 'navbar'}>
+    <div
+      className={
+        active || location.pathname !== '/' ? 'navbar active' : 'navbar'
+      }
+    >
       <div className='container'>
-        <a className='link' href='/'>
+        <Link className='link' to='/'>
           <div className='logo'>
             <span className='text'>fiverr</span>
             <span className='dot'>.</span>
           </div>
-        </a>
+        </Link>
         <div className='rightSide'>
-          <a className='link' href='/'>
+          <Link className='link' to='/'>
             Fiverr Business
-          </a>
-          <a className='link' href='/'>
+          </Link>
+          <Link className='link' to='/'>
             Explore
-          </a>
-          <a className='link' href='/'>
+          </Link>
+          <Link className='link' to='/'>
             English
-          </a>
-          <a className='link' href='/'>
+          </Link>
+          <Link className='link' to='/'>
             Sign In
-          </a>
+          </Link>
           {!userInfo.$seller && (
-            <a className='link' href='/'>
+            <Link className='link' to='/'>
               Become a Seller
-            </a>
+            </Link>
           )}
           {!userInfo && <button>Join</button>}
           {userInfo && (
@@ -62,26 +70,26 @@ const Navbar = () => {
                   <div className='options'>
                     {userInfo.$seller ? (
                       <React.Fragment>
-                        <a className='link' href='/'>
+                        <Link className='link' to='/mygigs'>
                           Gigs
-                        </a>
-                        <a className='link' href='/'>
+                        </Link>
+                        <Link className='link' to='/gigs'>
                           Add New Gigs
-                        </a>
+                        </Link>
                       </React.Fragment>
                     ) : (
                       <React.Fragment></React.Fragment>
                     )}
                     <>
-                      <a className='link' href='/'>
+                      <Link className='link' to='/orders'>
                         Orders
-                      </a>
-                      <a className='link' href='/'>
+                      </Link>
+                      <Link className='link' to='/messages'>
                         Messages
-                      </a>
-                      <a className='link' href='/'>
+                      </Link>
+                      <Link className='link' to='/'>
                         logout
-                      </a>
+                      </Link>
                     </>
                   </div>
                 )}
@@ -91,28 +99,28 @@ const Navbar = () => {
         </div>
       </div>
 
-      {active && (
+      {(active || location.pathname !== '/') && (
         <React.Fragment>
           <hr />
           <div className='menu'>
-            <a className='link' href='/'>
+            <Link className='link' href='/'>
               Test1
-            </a>
-            <a className='link' href='/'>
+            </Link>
+            <Link className='link' href='/'>
               Test2
-            </a>
-            <a className='link' href='/'>
+            </Link>
+            <Link className='link' href='/'>
               Test3
-            </a>
-            <a className='link' href='/'>
+            </Link>
+            <Link className='link' href='/'>
               Test4
-            </a>
-            <a className='link' href='/'>
+            </Link>
+            <Link className='link' href='/'>
               Test5
-            </a>
-            <a className='link' href='/'>
+            </Link>
+            <Link className='link' href='/'>
               Test6
-            </a>
+            </Link>
           </div>
         </React.Fragment>
       )}

@@ -13,68 +13,77 @@ import {
   Orders,
   Register,
 } from './pages';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 import { ErrorBoundary, ErrorPage } from './errorPage';
 import './app.scss';
 
 //router for routing the endpoint url
 //firing the url with specific url fires the page
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <Home />,
-  },
-  {
-    path: '/add',
-    element: <Add />,
-  },
-  {
-    path: '/gig',
-    element: <Gig />,
-  },
-  {
-    path: '/gigs',
-    element: <Gigs />,
-  },
-  {
-    path: '/login',
-    element: <Login />,
-  },
-  {
-    path: '/message',
-    element: <Message />,
-  },
-  {
-    path: '/messages',
-    element: <Messages />,
-  },
-  {
-    path: '/mygigs',
-    element: <Mygigs />,
-  },
-  {
-    path: '/orders',
-    element: <Orders />,
-  },
-  {
-    path: '/register',
-    element: <Register />,
-  },
-  {
-    path: '/*',
-    element: <ErrorPage />,
-  },
-]);
+
 function App() {
-  return (
-    <ErrorBoundary>
-      <React.Fragment>
+  const Layout = () => {
+    return (
+      <ErrorBoundary>
         <Navbar />
-        <RouterProvider router={router} />
+        <Outlet />
         <Footer />
-      </React.Fragment>
-    </ErrorBoundary>
-  );
+      </ErrorBoundary>
+    );
+  };
+
+  const router = createBrowserRouter([
+    {
+      path: '/',
+      element: <Layout />,
+      children: [
+        {
+          path: '/',
+          element: <Home />,
+        },
+        {
+          path: '/gigs',
+          element: <Gigs />,
+        },
+        {
+          path: '/mygigs',
+          element: <Mygigs />,
+        },
+        {
+          path: '/orders',
+          element: <Orders />,
+        },
+        {
+          path: '/messages',
+          element: <Messages />,
+        },
+        {
+          path: '/message/:id',
+          element: <Message />,
+        },
+        {
+          path: '/add',
+          element: <Add />,
+        },
+        {
+          path: '/gig/:id',
+          element: <Gig />,
+        },
+        {
+          path: '/*',
+          element: <ErrorPage />,
+        },
+      ],
+    },
+    {
+      path: '/register',
+      element: <Register />,
+    },
+    {
+      path: '/login',
+      element: <Login />,
+    },
+  ]);
+  return <RouterProvider router={router} />;
 }
 
 export default App;

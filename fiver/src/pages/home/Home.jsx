@@ -1,8 +1,15 @@
 import React from 'react';
+import { Featured, Layer } from '../../components';
+
 import './home.scss';
 
 const Home = () => {
-  return <div>Home Page</div>;
+  return (
+    <div>
+      <Featured />
+      <Layer />
+    </div>
+  );
 };
 
 export default Home;

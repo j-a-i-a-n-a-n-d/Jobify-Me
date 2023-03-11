@@ -1,12 +1,22 @@
-.error-component {
-  background-color: #f8d7da; /* light red */
-  border: 1px solid #f5c6cb; /* medium red */
-  color: #721c24; /* dark red */
-  padding: 10px;
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Poppins&display=swap');
+.error-container {
+  --dot-color: #099855;
+  --nav-color: #02501d;
+  background-color: var(--nav-color);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+.sad-emoji {
+  font-size: 8rem;
+  margin-bottom: 2rem;
 }
 
 .error-message {
-  font-size: 1.2em;
-  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 3rem;
 }
