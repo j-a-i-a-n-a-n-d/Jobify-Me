@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Poppins&display=swap');
+.whyfiverr {
+  display: flex;
+  background-color: #f1fdf7;
+  justify-content: center;
+  .container {
+    display: flex;
+    gap: 40px;
+    width: 1200px;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(67, 65, 65);
+    padding-top: 80px;
+    padding-bottom: 80px;
+    .leftSide {
+      .heading {
+        font-size: 34px;
+        font-weight: bolder;
+        margin-bottom: 20px;
+      }
+      .content {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .contentElement {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          color: rgb(126, 122, 122);
+          font-weight: 700;
+          .contentElementInner {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 12px;
+            img {
+              width: 35px;
+              height: 35px;
+            }
+            div {
+              color: rgb(67, 65, 65);
+              font-size: 22px;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+    .rightSide {
+      .conImage {
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}

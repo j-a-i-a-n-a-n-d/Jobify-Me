@@ -10,7 +10,12 @@ const Carousel = ({ rows, slidesToShow, cards }) => {
   return (
     <div className='carousel'>
       <div className='container'>
-        <Slider rows={rows} slidesToShow={slidesToShow}>
+        <Slider
+          rows={rows}
+          slidesToShow={slidesToShow}
+          autoplay='true'
+          autoplaySpeed='7000'
+        >
           {cardList}
         </Slider>
       </div>
