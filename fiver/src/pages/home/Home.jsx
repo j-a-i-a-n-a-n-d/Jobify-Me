@@ -1,5 +1,12 @@
 import React from 'react';
-import { Carousel, Featured, Layer, WhyFiverr } from '../../components';
+import {
+  Carousel,
+  Component8,
+  Featured,
+  FiverBusiness,
+  Layer,
+  WhyFiverr,
+} from '../../components';
 import { cards, projects } from '../dummyData';
 import './home.scss';
 
@@ -25,6 +32,11 @@ const Home = () => {
       <br />
       <br />
       <WhyFiverr />
+      <div className='container2'>
+        <h1>Explore The MarketPlace</h1>
+      </div>
+      <Component8 />
+      <FiverBusiness />
     </div>
   );
 };

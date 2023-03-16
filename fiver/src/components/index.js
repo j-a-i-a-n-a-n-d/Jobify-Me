@@ -5,4 +5,14 @@ import Layer from './layer/Layer';
 import Carousel from './carousel/Carousel';
 import WhyFiverr from './whyFiverr/WhyFiverr';
 import FiverBusiness from './fiverrBusiness/FiverBusiness';
-export { Featured, Navbar, Footer, Layer, Carousel, WhyFiverr, FiverBusiness };
+import Component8 from './component8/Component8';
+export {
+  Featured,
+  Navbar,
+  Footer,
+  Layer,
+  Carousel,
+  WhyFiverr,
+  FiverBusiness,
+  Component8,
+};
