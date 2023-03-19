@@ -6,7 +6,7 @@ const Carousel = ({ rows, slidesToShow, cards }) => {
   let cardList = cards.map((card) => (
     <Card key={card.id} title={card.title} desc={card.desc} img={card.img} />
   ));
-  console.log(cardList);
+  //console.log(cardList);
   return (
     <div className='carousel'>
       <div className='container'>
@@ -14,7 +14,7 @@ const Carousel = ({ rows, slidesToShow, cards }) => {
           rows={rows}
           slidesToShow={slidesToShow}
           autoplay='true'
-          autoplaySpeed='7000'
+          autoplaySpeed='1000'
         >
           {cardList}
         </Slider>

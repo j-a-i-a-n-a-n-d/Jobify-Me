@@ -6,14 +6,19 @@ import {
   FiverBusiness,
   Layer,
   WhyFiverr,
+  Carousel2,
 } from '../../components';
 import { cards, projects } from '../dummyData';
 import './home.scss';
 
 const Home = () => {
+  //cards data
   let rows1 = 1;
   let slidesToShow1 = 4;
-  //console.log(cards);
+
+  //projects data
+  let rows2 = 1;
+  let slidesToShow2 = 3;
   return (
     <div>
       <Featured />
@@ -37,6 +42,14 @@ const Home = () => {
       </div>
       <Component8 />
       <FiverBusiness />
+      <div className='container2'>
+        <h1>Get inspired with projects made by our freelancers</h1>
+      </div>
+      <Carousel2
+        rows={rows2}
+        slidesToShow={slidesToShow2}
+        projects={projects}
+      />
     </div>
   );
 };

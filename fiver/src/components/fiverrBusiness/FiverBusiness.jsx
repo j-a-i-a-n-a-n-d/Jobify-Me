@@ -5,20 +5,22 @@ const FiverBusiness = () => {
     <div className='fiverrbusiness'>
       <div className='container'>
         <div className='leftSide'>
-          <h1 className='heading1'>
-            <span className='fiverrHeading'>fiverr</span>business.
-            <span>new</span>
-          </h1>
+          <div className='heading1'>
+            <span className='fiverrHeading1'>fiverr</span>
+            <span className='fiverrHeading2'> business.</span>
+            <span className='fiverrHeading3'> new</span>
+          </div>
           <h1 className='heading'>A business solution designed for teams</h1>
           <div className='content'>
             <div className='contentElement'>
-              <span className='contentElementInner'>
-                <img src='./Layersvgs/fiverbusinessCheckCircle.png' />
-                <div>The best for every budget</div>
-              </span>
               <div>
-                Find high-quality services at every price point. No hourly
-                rates, just project-based pricing.
+                ✅ lorem ipusm okookokookoko lorem ipusm okookokookoko okai
+              </div>
+              <div>
+                ✅ lorem ipusm okookokookoko lorem ipusm okookokookoko okaiyy
+              </div>
+              <div>
+                ✅ lorem ipusm okookokookoko lorem ipusm okookokookoko okayy
               </div>
             </div>
           </div>

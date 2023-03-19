@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Poppins&display=swap');
+
+.card2 {
+  color: black;
+  cursor: pointer;
+  position: relative;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  color: rgb(67, 65, 65);
+  .top {
+    width: 375px;
+    height: 300px;
+    border-radius: 20px;
+    &:hover {
+      transform: scale(1.05);
+      transition: all 0.3s ease-out;
+      border-radius: 35px;
+    }
+  }
+  .bottom {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    .pp {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      border-radius: 50%;
+      &:hover {
+        transform: scale(1.05);
+        transition: all 0.3s ease-out;
+      }
+    }
+    .bottomright {
+      font-weight: bold;
+    }
+  }
+}

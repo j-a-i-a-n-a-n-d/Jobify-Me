@@ -6,6 +6,7 @@ import Carousel from './carousel/Carousel';
 import WhyFiverr from './whyFiverr/WhyFiverr';
 import FiverBusiness from './fiverrBusiness/FiverBusiness';
 import Component8 from './component8/Component8';
+import Carousel2 from './carousel2/Carousel2';
 export {
   Featured,
   Navbar,
@@ -15,4 +16,5 @@ export {
   WhyFiverr,
   FiverBusiness,
   Component8,
+  Carousel2,
 };

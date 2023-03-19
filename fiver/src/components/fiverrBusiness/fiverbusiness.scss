@@ -11,12 +11,26 @@
     font-family: 'Poppins', sans-serif;
     color: white;
     padding-top: 80px;
-    padding-bottom: 80px;
+    padding-bottom: 40px;
     .leftSide {
-      .heading {
-        font-size: 34px;
-        font-weight: bolder;
-        margin-bottom: 20px;
+      .heading1 {
+        font-weight: normal;
+        margin-bottom: 30px;
+        font-size: 24px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .fiverrHeading1 {
+          font-weight: 800;
+        }
+        .fiverrHeading2 {
+        }
+        .fiverrHeading3 {
+          background-color: #584aff;
+          border-radius: 20px;
+          font-size: 12px;
+          padding: 2px 10px;
+        }
       }
       .content {
         display: flex;
@@ -26,20 +40,11 @@
           display: flex;
           flex-direction: column;
           justify-content: center;
-          font-weight: 700;
-          .contentElementInner {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: 12px;
-            img {
-              width: 35px;
-              height: 35px;
-            }
-            div {
-              font-size: 22px;
-              font-weight: 600;
-            }
+          font-weight: 500;
+          gap: 20px;
+          div {
+            font-size: 18px;
+            font-weight: 400;
           }
         }
       }

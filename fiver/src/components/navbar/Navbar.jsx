@@ -9,7 +9,7 @@ const Navbar = () => {
   //console.log(open);
 
   const activeFunction = () => {
-    window.scrollY > 0 ? setActive(true) : setActive(false);
+    window.scrollY > 20 ? setActive(true) : setActive(false);
   };
 
   useEffect(() => {
