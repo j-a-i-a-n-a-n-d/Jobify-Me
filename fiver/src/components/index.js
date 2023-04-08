@@ -7,6 +7,7 @@ import WhyFiverr from './whyFiverr/WhyFiverr';
 import FiverBusiness from './fiverrBusiness/FiverBusiness';
 import Component8 from './component8/Component8';
 import Carousel2 from './carousel2/Carousel2';
+import GigCard from './gigCard/GigCard';
 export {
   Featured,
   Navbar,
@@ -17,4 +18,5 @@ export {
   FiverBusiness,
   Component8,
   Carousel2,
+  GigCard,
 };
