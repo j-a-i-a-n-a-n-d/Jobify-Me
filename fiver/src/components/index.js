@@ -8,6 +8,7 @@ import FiverBusiness from './fiverrBusiness/FiverBusiness';
 import Component8 from './component8/Component8';
 import Carousel2 from './carousel2/Carousel2';
 import GigCard from './gigCard/GigCard';
+import GigStickyComponent from './gigStickyComponent/GigStickyComponent';
 export {
   Featured,
   Navbar,
@@ -19,4 +20,5 @@ export {
   Component8,
   Carousel2,
   GigCard,
+  GigStickyComponent,
 };
