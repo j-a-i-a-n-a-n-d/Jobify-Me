@@ -8,7 +8,6 @@
     height: 50%;
     object-fit: cover;
   }
-
   .info {
     padding: 2px 20px;
     display: flex;
@@ -23,8 +22,6 @@
         height: 26px;
         border-radius: 50%;
         object-fit: cover;
-      }
-      span {
       }
     }
     p {
@@ -50,27 +47,23 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     img {
       width: 16px;
       height: 16px;
       cursor: pointer;
       object-fit: cover;
     }
-
     .price {
       span {
         color: #999;
         font-size: 10px;
       }
-
       h2 {
         color: #555;
         font-size: 12px;
         font-weight: 400;
         text-align: end;
       }
-
       sup {
         font-size: 8px;
         font-weight: 300;
