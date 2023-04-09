@@ -42,8 +42,7 @@ const Reviews = () => {
         only artist Ill be using on Fiverr. Communication was amazing, each and
         every day he sent me images that I was free to request changes to. They
         listened, understood, and delivered above and beyond my expectations. I
-        absolutely recommend this gig, and know already that Ill be using it
-        again very very soon
+        absolutely recommend this gig.
       </p>
       <div className='helpful'>
         <span>Helpful?</span>
@@ -142,7 +141,7 @@ const Gig = () => {
               </div>
               <hr />
               <p>
-                My name is Anna, I enjoy creating AI generated art in my spare
+                My name is chu, I enjoy creating AI generated art in my spare
                 time. I have a lot of experience using the AI program and that
                 means I know what to prompt the AI with to get a great and
                 incredibly detailed result.
