@@ -10,7 +10,7 @@
   }
 
   .info {
-    padding: 10px 20px;
+    padding: 2px 20px;
     display: flex;
     flex-direction: column;
     gap: 0px;
@@ -39,7 +39,7 @@
         width: 14px;
       }
       span {
-        font-size: 14px;
+        font-size: 12px;
         font-weight: bold;
         color: #ffc108;
       }
@@ -61,18 +61,18 @@
     .price {
       span {
         color: #999;
-        font-size: 12px;
+        font-size: 10px;
       }
 
       h2 {
         color: #555;
-        font-size: 18px;
+        font-size: 12px;
         font-weight: 400;
         text-align: end;
       }
 
       sup {
-        font-size: 12px;
+        font-size: 8px;
         font-weight: 300;
       }
     }

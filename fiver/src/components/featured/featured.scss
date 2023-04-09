@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Poppins&display=swap');
 $dot-color: #099855;
 $nav-color: #00401d;
 
@@ -8,8 +7,6 @@ $nav-color: #00401d;
   justify-content: center;
   background-color: $nav-color;
   color: white;
-  font-family: 'Lato', sans-serif;
-  font-family: 'Poppins', sans-serif;
   .container {
     width: 1200px;
     display: flex;

@@ -4,9 +4,9 @@ import './messages.scss';
 
 const Messages = () => {
   const currentUser = {
-    id: 1,
-    username: 'Anna',
-    isSeller: true,
+    $id: 1,
+    $username: 'Anna',
+    $seller: true,
   };
 
   const message = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
@@ -22,7 +22,7 @@ const Messages = () => {
         </div>
         <table>
           <tr>
-            <th>{currentUser.isSeller ? 'Buyer' : 'Seller'}</th>
+            <th>{currentUser.$seller ? 'Buyer' : 'Seller'}</th>
             <th>Last Message</th>
             <th>Date</th>
             <th>Action</th>
@@ -36,7 +36,7 @@ const Messages = () => {
             </td>
             <td>1 hour ago</td>
             <td>
-              <button>Mark as Read</button>
+              <button>Mark Read</button>
             </td>
           </tr>
           <tr className='active'>
@@ -48,7 +48,7 @@ const Messages = () => {
             </td>
             <td>2 hours ago</td>
             <td>
-              <button>Mark as Read</button>
+              <button>Mark Read</button>
             </td>
           </tr>
           <tr>
